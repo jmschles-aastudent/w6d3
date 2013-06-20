@@ -91,13 +91,15 @@ Snake = (function() {
 		} else {
 			this.generateApple();
 		}
-
-		console.log(this.snake.body);
 	}
 
 	Board.prototype.generateApple = function() {
 		xCoord = Math.floor(Math.random() * this.dimensions[0]);
 		yCoord = Math.floor(Math.random() * this.dimensions[1]);
+		while (this.snake.body.indexOf(xCoord + "," + yCoord) !== -1) {
+			xCoord = Math.floor(Math.random() * this.dimensions[0]);
+			yCoord = Math.floor(Math.random() * this.dimensions[1]);
+		}
 		this.apple = xCoord + "," + yCoord;
 	}
 
@@ -137,16 +139,4 @@ Snake = (function() {
 		Game: Game
 	};
 })();
-
-	// var board = new Snake.Game(10, 20);
-	// console.log(board.apple);
-	// board.step();
-	// board.step();
-	// board.step();
-	// board.snake.turn("north");
-	// board.step();
-	// board.step();
-	// board.snake.turn("west");
-	// board.step();
-	// board.step();
 
