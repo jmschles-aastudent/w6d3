@@ -18,7 +18,15 @@ h1 {
 	height: 26px;
 	margin: 1px;
 	float: left;
-	background-color: #ddd;
+	/*background-color: #ddd;*/
 	border: solid 1px #bbb;
 	border-radius: 3px;
+}
+
+.snake {
+	background-color: #072;
+}
+
+.apple {
+	background-color: #822;
 }
