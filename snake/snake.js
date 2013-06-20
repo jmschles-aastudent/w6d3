@@ -1,5 +1,3 @@
-var _ = require('underscore');
-
 function Snake(startRow, startCol) {
 	var that = this;
 
@@ -68,7 +66,6 @@ function Board(numRows, numCols) {
 }
 
 Board.prototype.step = function () {
-	// TODO: only if it isn't an apple
 
 	var head = this.snake.body[0];
 	switch (this.snake.dir) {
@@ -102,15 +99,15 @@ Board.prototype.generateApple = function() {
 	this.apple = [xCoord, yCoord];
 }
 
-var board = new Board(10, 20);
-console.log(board.apple);
-board.step();
-board.step();
-board.step();
-board.snake.turn("north");
-board.step();
-board.step();
-board.snake.turn("west");
-board.step();
-board.step();
+// var board = new Board(10, 20);
+// console.log(board.apple);
+// board.step();
+// board.step();
+// board.step();
+// board.snake.turn("north");
+// board.step();
+// board.step();
+// board.snake.turn("west");
+// board.step();
+// board.step();
 
