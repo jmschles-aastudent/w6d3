@@ -1,0 +1,79 @@
+#towers_container {
+	width: 620px;
+	margin: 0 auto;
+	border: 1px solid #CCC;
+	padding: 20px;
+}
+
+h1 {
+	font-family: 'Courier New', monospace;
+	color: #FF5252;
+	text-align: center;
+	font-weight: normal;
+	font-size: 48px;
+	margin-top: 0;
+}
+
+p.input {
+	text-align: center;
+	padding: 10px;
+}
+
+input[type="text"] {
+	padding: 5px 9px 5px 9px;
+}
+
+button {
+	padding: 7px 9px 7px 9px;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.rods {
+	overflow: hidden;
+}
+
+.rods ul {
+	width: 205px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	border-right: 1px solid #EBEBEB;
+}
+
+.rods ul:last-child {
+	border-right: none;
+}
+
+.rods ul li {
+	text-align: center;
+	color: #57B385;
+	list-style-type: none;
+	margin: 0 auto;
+	height: 18px;
+	margin-top: 1px;
+}
+
+.green {
+	background-color: #99FFCC;
+	border: 1px solid #79D5A7;
+}
+
+.none {
+	background-color: none;
+	border: none;
+}
+
+.highlight {
+	background-color: #FFFFBB;
+}
+
+#messages {
+	text-align: center;
+}
+
+.error {
+	color: red;
+}
